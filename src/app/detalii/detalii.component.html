@@ -1,0 +1,10 @@
+<div class="details-container">
+    <h2>Detalii pentru rechinul cu id {{ detail.sharkId }}</h2>
+    <p>Specie: {{ detail.specie | uppercase}} </p>
+    <p>Location: {{ detail.location }}</p>
+    <p>Update: {{ detail.update }}</p>
+    <p>Birth Year: {{ detail.birthYear }}
+        <span *ngIf="detail.birthYear < 2000" style="display: inline;">(is very old)</span>
+      </p>
+    <p>Favorite Food: {{ detail.favFood }}</p>
+  </div>

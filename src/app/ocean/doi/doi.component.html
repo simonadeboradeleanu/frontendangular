@@ -1,0 +1,15 @@
+<table class="table table-striped">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Ocean</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of sharkList$ |async">
+            <td>{{item.id}}</td>
+            <td>{{item.nume}}</td>
+            <td>{{item.oceanId}}</td>
+        </tr>
+</table>
+
+

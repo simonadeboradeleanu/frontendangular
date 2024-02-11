@@ -1,0 +1,17 @@
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <!-- <th>Id</th> -->
+            <th>Name</th>
+            <th>isAdmin</th>
+        </thead>
+        <tbody>
+            <tr *ng="let item of userList$ |async ">
+                <td>{{item.username}}</td>
+                <td>{{ item.admin | uppercase }}</td>   
+            </tr>
+    </table>
+    </div>
+    
+    

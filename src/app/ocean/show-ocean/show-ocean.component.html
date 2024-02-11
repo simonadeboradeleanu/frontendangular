@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oceanele Pamantului</title>
+	<style>
+		body {
+			/* background-image: url('https://www.surfertoday.com/images/stories/physical-world-map.jpg');			
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center; */
+			background-color: transparent;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0 auto;
+			max-width: 800px;
+		}
+
+		.button {
+			background-color: transparent;
+			border: none;
+			color: white;
+			padding: 50px 60px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 26px;
+			margin: 10px;
+			cursor: pointer;
+
+		}
+
+		.button:hover {
+			font-size: 35px;
+		}
+
+		.pacific {
+			position: absolute;
+			top: 50%;
+			left: 5%;
+		}
+
+		.arctic {
+			position: absolute;
+			top: -2%;
+			left: 44%;
+		}
+
+		.atlantic {
+			position: absolute;
+			top: 27%;
+			right: 53%;
+		}
+
+		.indian {
+			position: absolute;
+			top: 50%;
+			right: 20%;
+		}
+
+		.antarctic {
+			position: absolute;
+			bottom: 2%;
+			left: 40%;
+		}
+
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button class="button pacific" (click)="navigateTo('unu')">Pacific</button>
+		<button class="button arctic" (click)="navigateTo('doi')">Arctic</button>
+		<button class="button atlantic" (click)="navigateTo('trei')">Atlantic</button>
+		<button class="button indian" (click)="navigateTo('patru')">Indian</button>
+		<button class="button antarctic" (click)="navigateTo('cinci')">Antarctic</button>
+		<!-- <router-outlet></router-outlet> -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.body{
+    background-color:transparent;
+}
+
+.table-container {
+    filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  
+  .table {
+    color: white;
+  }

@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container mt-4">
+    <h2 class="mb-4">Add Shark</h2>
+    <form [formGroup]="Addshark" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nume">Name:</label>
+        <input type="text" id="nume" class="form-control" formControlName="nume" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="oceanId">Ocean:</label>
+        <select id="oceanId" class="form-control" formControlName="oceanId" required>
+          <option *ngFor="let ocean of oceans" [ngValue]="ocean.id">{{ ocean.name }}</option>
+        </select>
+      </div>
+  
+      <div formGroupName="detail">
+        <h3 class="mb-3">Shark Details</h3>
+  
+        <div class="form-group">
+          <label for="specie">Specie:</label>
+          <input type="text" id="specie" class="form-control" formControlName="specie" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" class="form-control" formControlName="location" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="update">Update:</label>
+          <input type="text" id="update" class="form-control" formControlName="update" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="birthYear">Birth Year:</label>
+          <input type="text" id="birthYear" class="form-control" formControlName="birthYear" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="favFood">Favorite Food:</label>
+          <input type="text" id="favFood" class="form-control" formControlName="favFood" required>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Add Shark</button>
+    </form>
+  </div>
+  
+  <br>
